@@ -1,0 +1,94 @@
+CONFIGURACION DE GIT
+git config --global user.name "william" 
+git config --global user.email "guillermototi11@gmail.com"
+git config --global core.editor "code --wait"     visual studio por defecto
+git config --global -e     para abrir el editor de codig visual se habilita la consola si cerramos el archivo
+git config --global core.autocrlf true     para windows configuracion Linux(input en ves de true)
+git config -h     todas las opciones que podemos configurar a git
+nota en windows es carpetas y en linux o mac es directorios
+
+
+
+COMANDOS BASICOS DE BASH
+ls         permite listar todos los archivos y carpetas en el directorio que nos encontramos
+pwd        nos indica en que directorio  nos encontramos
+cd         para movernos o dirigirnos a carpetas
+cd..       para salir del directorio
+mkdir nombre_de_carpeta        para crear nuevo directorio
+
+
+
+
+INICIALIZANDO DIRECTORIO
+git init                         inicializamos un directorio git vacio
+ls                               para ver el contenido del directorio
+ls -a                            para vere archivos ocultos
+code .                           para abrir la carpeta con visual code situandonos en la carpeta
+git status                       muestra el estado actual de nuestro directorio
+git add nombre_del_archivo.extencion     seleccionar los canbios 
+git add .                        para seleccionar todos los archivos
+archivos listos para ser conprometidos (committed)
+
+
+
+
+COMMIT (CONPREMETER) EN NUESTRO TRABAJO
+git commit -m "mensaje del commit"         para agregar un commit a nuestro trabajo
+git commit                                 nos manda a una consola donde escribimos el mensaje del commit y lo guardamos
+NOTA: si no esta configurado para visual se tiene que poner i
+para tipear en la consola i luego escribimos el mensje del commit
+luego escape : wq para salir
+rm nombre_del_archivo.extencion               para borrar el archivo
+git rm nombre_del_archivo                     sirve par eliminar el archivo y estara listo para ser commiteado sin add
+git restore --staged nombre_del_archivo       revertir algun cambio que pasamos al estado de staged osea de add
+git restore nombre_del_archivo                descartar los cambios
+mv nombre_del_archivo nuevo_nombre            para canbiar el nombre del archivo                                
+NOTA: tenemos que agregar los canbios del antigua archivo y del nuevo
+git mv nombre_del_archivo nuevo_nombre        con esto ya esta agregado al staged ya no es necesario add
+
+
+
+
+
+IGNORANDO ARCHIVOS Y DIRECTORIOS
+.gitignore     en este archivo escribimos los archivos ignorados
+
+
+
+
+
+UN MEJOR GIT STATUS
+git status -s                un git status mas corto
+
+
+
+
+VISUALIZANDO LOS CANBIOS EN EL CODIGO
+git diff                           muestra los canbios de codigo --- ++++
+git diff --staged                  nos muestra todos los canbios en nuestra etapa de staged
+
+
+
+
+VIENDO EL HISTORIAL DE COMMITS
+git log
+git log --oneline       nos muestra el hash y el nombre del commit mas corto
+
+
+
+
+RAMAS O BRANCHES EN git
+git branch                                       para verificar en que rama nos encontramos
+git checkout -b nombre_de_la_rama                para crear una nueva rama y canbiarse a ella
+cat nombre_del_archivo                           nos muestra el contenido del archivo
+git merge rama_que queremos traer                nos permite traer los canbios de otra rama
+
+
+
+
+
+
+
+
+
+

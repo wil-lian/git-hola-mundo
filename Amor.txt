@@ -1,0 +1,47 @@
+                -----------------------------------
+                ***             GIT             ***
+                -----------------------------------                 
+
+1 CONFIGURACION DE GIT
+git config --global user.name "william"     -->     nombre de usuario
+git config --global user.email "guillermototi11@gmail.com"    -->     correo con el que nos conectamos
+
+
+2 INICIALIZANDO DIRECTORIO
+git init       -->      inicializamos un directorio git vacio
+git status    -->    muestra el estado actual de nuestro directorio
+git add nombre_del_archivo.extencion    -->     seleccionar los cambios 
+git add .     -->      para seleccionar todos los archivos
+
+
+3 COMMIT (CONPREMETER) EN NUESTRO TRABAJO
+git commit -m "mensaje del commit"      -->     para agregar un commit a nuestro trabajo
+
+
+4 CLONAR UN REPOSITORI (O DESCARGAR UN REPOSITORIO)
+git clone ruta_del_repositorio
+
+
+5 IGNORANDO ARCHIVOS Y DIRECTORIOS
+.gitignore     -->    en este archivo escribimos los archivos ignorados.con su extencion
+
+
+6 BRANCH(RAMAS) 
+git branch                                       para verificar en que rama nos encontramos
+git checkout -b nombre_de_la_rama                para crear una nueva rama y canbiarse a ella
+cat nombre_del_archivo                           nos muestra el contenido del archivo
+git merge rama_que queremos traer                nos permite traer los canbios de otra rama
+
+
+NOTAS:
+code .   -->       para abrir la carpeta con visual code situandonos en la carpeta
+ls       -->  permite listar todos los archivos y carpetas en el directorio que nos encontramos
+ls -a    -->  para vere archivos ocultos
+pwd      -->  nos indica en que directorio  nos encontramos
+cd nombre_de_la_ruta     -->  para movernos o dirigirnos a carpetas
+cd ..    -->   para salir del directorio hacia atras
+mkdir nombre_de_carpeta     -->      para crear nuevo directorio
+
+
+UN MEJOR GIT STATUS
+git status -s                un git status mas corto

@@ -1,0 +1,5 @@
+
+git init                         inicializamos un directorio git vacio
+ls                               para ver el contenido del directorio
+ls -a                            para vere archivos ocultos
+code .                           para abrir la carpeta con visual code situandonos en la carpeta
